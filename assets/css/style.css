@@ -1,0 +1,217 @@
+/* GENERALS */
+@font-face {
+  font-family: "Karla";
+  src: url("../fonts/Karla/Karla-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Karla";
+  color: #323a45;
+  background-color: white;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+header h3:hover {
+  color: #323a456e;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div a {
+  text-decoration: none;
+  color: #323a45;
+  color: black;
+  font-size: 0.9rem;
+}
+
+header a:hover {
+  color: #323a456e;
+}
+
+header div a:nth-of-type(2) {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.space {
+  color: white;
+}
+
+/* MAIN */
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-areas:
+    "block1 block1 block1"
+    "block2 block3 block4"
+    "block5 block6 block7";
+  gap: 3%;
+}
+
+.block1 {
+  grid-area: block1;
+}
+
+.block1 img {
+  width: 100%;
+}
+
+.block2 {
+  grid-area: block2;
+}
+
+.block3 {
+  grid-area: block3;
+}
+
+.block4 {
+  grid-area: block4;
+}
+
+.block5 {
+  grid-area: block5;
+}
+
+.block6 {
+  grid-area: block6;
+}
+
+.block7 {
+  grid-area: block7;
+}
+
+article img {
+  width: 45vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+header h3:hover {
+  color: #323a456e;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+header div a {
+  text-decoration: none;
+  color: #323a45;
+  font-size: 0.9rem;
+}
+
+header div a:hover {
+  color: #323a456e;
+}
+
+header div a:nth-of-type(2) {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.space {
+  color: white;
+}
+
+/* MAIN */
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.grid_container_last {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
+  grid-template-areas:
+    "block1 block1 block1"
+    "block2 block3 block4";
+  gap: 3%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.footer-headline {
+  margin-bottom: 35px;
+}
+
+.footer-bullet-points {
+  display: flex;
+  flex-direction: column;
+}
+
+div a {
+  text-decoration: none;
+  color: #323a45;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Ruby {
+  font-weight: 800;
+}
+
+.grid_container .block1,
+.grid_container .block2,
+.grid_container .block3,
+.grid_container .block4,
+.grid_container .block5,
+.grid_container .block6,
+.grid_container .block7 {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.4s ease, background-color 0.4s ease, opacity 0.4s ease;
+}
+
+.grid_container .block1:hover,
+.grid_container .block2:hover,
+.grid_container .block3:hover,
+.grid_container .block4:hover,
+.grid_container .block5:hover,
+.grid_container .block6:hover,
+.grid_container .block7:hover {
+  transform: scale(1.1); /* Vergrößerungseffekt */
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.6; /* Anfangs unsichtbar */
+  transition: opacity 0.5s;
+}
