@@ -200,7 +200,6 @@ div a {
 .grid_container .block6,
 .grid_container .block7 {
   background-color: rgba(255, 255, 255, 0.8);
-  transition: transform 0.4s ease, background-color 0.4s ease, opacity 0.4s ease;
 }
 
 .grid_container .block1:hover,
@@ -210,8 +209,7 @@ div a {
 .grid_container .block5:hover,
 .grid_container .block6:hover,
 .grid_container .block7:hover {
-  transform: scale(1.1); /* Vergrößerungseffekt */
   background-color: rgba(255, 255, 255, 0.8);
-  opacity: 0.6; /* Anfangs unsichtbar */
-  transition: opacity 0.5s;
+  opacity: 0.6;
+  transition: opacity 0.2s;
 }
